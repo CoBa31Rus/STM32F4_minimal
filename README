@@ -28,3 +28,6 @@ Include project for geany.
 6)For load make load.
 
 7)Change debug level in variable OPT.
+
+8) If you need FPU then add in main func:
+SCB->CPACR |= ((3UL << 20)|(3UL << 22));
